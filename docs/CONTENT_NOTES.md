@@ -12,12 +12,12 @@
 
 ## 근거
 
-- 소개, 연락처, 학력, 인턴, 부트캠프, 멋쟁이사자처럼 활동, 축제 서비스 이용자 2,500+: https://www.notion.so/1b416794767c428582def2ec856fc6df
-- DoLog 6,500+ 조회, 약 900 활성 사용자, 3개 학과, 유료 도입, 역할·기여도, N+1·트랜잭션·이미지 처리: https://www.notion.so/3e3cc07a719a80689e90d5cdc443e3fc
-- 치즈네컷 본인 역할과 프린터 연동·상태 조회·이미지 보정: https://www.notion.so/1b6cc07a719a802cab92f6740095feaa
-- 부스끼리 검색·필터·모델·응답 설계: https://www.notion.so/1b6cc07a719a801c8394de6dcde7767a
-- FedHybrid 실험 성과와 본인 역할: https://www.notion.so/2eecc07a719a805da8afea2ebdd60c57
-- Voisk 프론트엔드 역할·비교 실험·출원 상태: https://www.notion.so/0aa537f149d043e1aef54485089f7659
+- 소개, 연락처, 학력, 인턴, 부트캠프, 멋쟁이사자처럼 활동, 축제 서비스 이용자 2,500+: https://alpine-oxygen-fc7.notion.site/Kim-Jiwoo-1b416794767c428582def2ec856fc6df
+- DoLog 6,500+ 조회, 약 900 활성 사용자, 3개 학과, 유료 도입, 역할·기여도, N+1·트랜잭션·이미지 처리: https://alpine-oxygen-fc7.notion.site/DoLog-3e3cc07a719a80689e90d5cdc443e3fc
+- 치즈네컷 본인 역할과 프린터 연동·상태 조회·이미지 보정: https://alpine-oxygen-fc7.notion.site/1b6cc07a719a802cab92f6740095feaa
+- 부스끼리 검색·필터·모델·응답 설계: https://alpine-oxygen-fc7.notion.site/1b6cc07a719a801c8394de6dcde7767a
+- FedHybrid 실험 성과와 본인 역할: https://alpine-oxygen-fc7.notion.site/FedHybrid-2eecc07a719a805da8afea2ebdd60c57
+- Voisk 프론트엔드 역할·비교 실험·출원 상태: https://alpine-oxygen-fc7.notion.site/NFC-Voisk-0aa537f149d043e1aef54485089f7659
 - 디자인 참고: https://sanghohan.github.io/ (목차와 문서형 구조를 참고하고 문구와 코드는 새로 작성)
 
 ## 표현의 한계
