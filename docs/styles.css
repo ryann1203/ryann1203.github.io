@@ -71,7 +71,7 @@ nav a[aria-current] { color: var(--accent); background: var(--accent-soft); font
 h1 { font-size: 60px; font-weight: 750; line-height: 1.3; letter-spacing: -.055em; margin-top: 18px; }
 h1 span { display: block; font-size: 18px; line-height: 1.5; font-weight: 500; color: var(--muted); letter-spacing: -.025em; margin-top: 12px; }
 .hero-description { margin-top: 23px; font-size: 17px; color: var(--body); line-height: 1.8; }
-.profile-photo { width: 168px; height: 168px; border: 1px solid var(--line); border-radius: 24px; object-fit: cover; object-position: 50% 30%; background: var(--surface); box-shadow: 0 8px 24px rgb(25 35 50 / 5%); }
+.profile-photo { display: block; width: 168px; height: auto; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: 0 8px 24px rgb(25 35 50 / 5%); }
 .contact-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
 .contact-links a { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--body); background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 5px 11px; white-space: nowrap; }
 .contact-links a:hover { border-color: var(--accent); color: var(--accent); }
@@ -100,10 +100,13 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
 .experience-row { display: flex; justify-content: space-between; align-items: start; gap: 24px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .experience-row:first-child { padding-top: 0; }
 .experience-row:last-child { padding-bottom: 0; border-bottom: 0; }
-.experience-row h3 { font-size: 16px; font-weight: 650; line-height: 1.6; }
-.experience-row h3 span { font-size: 14px; font-weight: 450; color: var(--body); margin-left: 4px; }
+.experience-row h3, .experience-row h4 { font-size: 16px; font-weight: 650; line-height: 1.6; }
+.experience-row h3 span, .experience-row h4 span { font-size: 14px; font-weight: 450; color: var(--body); margin-left: 4px; }
 .experience-row p { font-size: 14px; color: var(--body); margin-top: 3px; }
 .row-date { flex: 0 0 auto; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 3px; letter-spacing: 0; }
+.awards { margin-top: 38px; }
+.awards > h3 { margin-bottom: 20px; font-size: 21px; font-weight: 700; }
+.internship .project-heading h3 { font-size: 21px; font-weight: 700; line-height: 1.5; }
 
 /* Project timeline and cards */
 .project-group { position: relative; border-left: 1px solid var(--line); margin-left: 5px; padding: 0 0 8px 24px; }
@@ -124,7 +127,8 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
 .project-points li + li { margin-top: 7px; }
 .project-points li::marker { color: #bfc6d2; font-size: .8em; }
 .measurement-note { margin-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.75; }
-.contribution { margin-top: 17px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.project-role { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; margin-top: 8px; color: var(--body); font-size: 14px; font-weight: 650; line-height: 1.8; }
+.project-role span { color: var(--muted); font-size: 13px; font-weight: 450; }
 .project-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 15px; font-size: 14px; font-weight: 600; color: var(--accent); }
 .project-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .project > .tags { margin-top: 18px; }
@@ -150,15 +154,15 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
   .header-tools { margin-left: auto; gap: 8px; padding-bottom: 8px; }
   .icon-button { width: 30px; height: 30px; }
   .icon-button .icon { width: 16px; height: 16px; }
-  nav { order: 3; flex-basis: 100%; padding: 0 0 8px; gap: 5px; }
-  nav a { padding: 4px 11px; font-size: 12px; }
+  nav { order: 3; flex-basis: 100%; padding: 0 0 8px; gap: 3px; }
+  nav a { padding: 4px 8px; font-size: 12px; }
   .hero { padding: 36px 0 32px; }
   .hero-main { grid-template-columns: minmax(0, 1fr) 92px; gap: 16px; align-items: start; }
   .hero-copy { display: contents; }
   .badge { grid-column: 1; justify-self: start; font-size: 11px; padding: 3px 10px; }
   h1 { grid-column: 1; font-size: 42px; margin-top: 0; }
   h1 span { font-size: 14px; margin-top: 8px; }
-  .profile-photo { grid-column: 2; grid-row: 1 / 3; align-self: center; width: 92px; height: 112px; border-radius: 16px; }
+  .profile-photo { grid-column: 2; grid-row: 1 / 3; align-self: center; width: 92px; height: auto; border-radius: 16px; }
   .hero-description { grid-column: 1 / -1; font-size: 15px; margin-top: 3px; }
   .contact-links { grid-column: 1 / -1; margin-top: 4px; gap: 7px; }
   .contact-links a { font-size: 11px; padding: 4px 10px; gap: 6px; }
@@ -176,10 +180,12 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
   .skill-card h3 { font-size: 10px; }
   .skill-card .tags li { font-size: 11px; }
   .experience-row { gap: 12px; padding-block: 14px; }
-  .experience-row h3 { font-size: 14px; }
-  .experience-row h3 span { display: block; margin-left: 0; font-size: 12px; }
+  .experience-row h3, .experience-row h4 { font-size: 14px; }
+  .experience-row h3 span, .experience-row h4 span { display: block; margin-left: 0; font-size: 12px; }
   .experience-row p { font-size: 12px; }
   .row-date { font-size: 10px; }
+  .awards { margin-top: 30px; }
+  .awards > h3, .internship .project-heading h3 { font-size: 18px; }
   .project-group { margin-left: 4px; padding-left: 17px; }
   .group-heading::before { left: -22px; width: 8px; height: 8px; top: 9px; }
   .group-heading h3 { font-size: 18px; }
@@ -194,7 +200,8 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
   .project-links { font-size: 12px; gap: 15px; }
   .project > .tags { gap: 6px; margin-top: 15px; }
   .tags li { font-size: 11px; padding: 3px 9px; }
-  .contribution { font-size: 11px; }
+  .project-role { font-size: 13px; gap: 2px 10px; }
+  .project-role span { font-size: 12px; }
   .site-footer { font-size: 10px; }
 }
 
@@ -228,7 +235,7 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
   h1 { font-size: 32pt; margin-top: 10px; }
   h1 span { font-size: 12pt; }
   .hero-description { font-size: 10pt; margin-top: 12px; }
-  .profile-photo { width: 100px; height: 120px; border-radius: 12px; box-shadow: none; }
+  .profile-photo { width: 100px; height: auto; border-radius: 12px; box-shadow: none; }
   .contact-links { margin-top: 14px; }
   .contact-links a { font-size: 9pt; }
   .hero-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 17px; }
@@ -242,10 +249,13 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
   .skill-card { padding: 10px; }
   .skill-card .tags li { font-size: 8pt; }
   .experience-row { padding: 10px 0; break-inside: avoid; }
-  .experience-row h3 { font-size: 10pt; }
-  .experience-row h3 span { display: inline; font-size: 9pt; }
+  .experience-row h3, .experience-row h4 { font-size: 10pt; }
+  .experience-row h3 span, .experience-row h4 span { display: inline; font-size: 9pt; }
   .experience-row p { font-size: 9pt; }
   .row-date { font-size: 8pt; }
+  .awards { margin-top: 22px; }
+  .awards > h3, .internship .project-heading h3 { font-size: 14pt; }
+  .internship { break-inside: avoid; }
   .project-group { padding-left: 16px; }
   .group-heading { break-after: avoid; padding-bottom: 14px; }
   .group-heading h3 { font-size: 14pt; }
@@ -257,7 +267,8 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
   .project-date { font-size: 8pt; }
   .project-points { margin-top: 12px; }
   .project-points li + li { margin-top: 5px; }
-  .contribution { font-size: 8pt; margin-top: 10px; }
+  .project-role { font-size: 10pt; margin-top: 7px; }
+  .project-role span { font-size: 9pt; }
   .project-links { margin-top: 10px; font-size: 9pt; }
   .tags li { font-size: 8pt; padding: 2px 8px; }
   .project > .tags { margin-top: 12px; }

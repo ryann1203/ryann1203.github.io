@@ -22,7 +22,7 @@
  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol><symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7m12 5v-3.4c0-1 .1-1.4-.5-2 3-.4 6.2-1.5 6.2-6.7 0-1.5-.5-2.6-1.4-3.5.2-.5.6-2-.1-3.5 0 0-1.1-.4-3.6 1.3a12.1 12.1 0 0 0-6.6 0C6.5 1.8 5.4 2.2 5.4 2.2c-.7 1.5-.3 3-.1 3.5A5 5 0 0 0 4 9.2c0 5.2 3.2 6.3 6.2 6.7-.4.4-.6 1-.6 1.8v3.6"/></symbol><symbol id="icon-page" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></symbol><symbol id="icon-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6zM18 12h.01"/></symbol><symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></symbol><symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol></svg>
  <header class="site-header"><div class="container header-inner">
   <a class="brand" href="#top"><strong>김지우</strong><span> Backend Developer</span></a>
-  <div class="header-controls"><nav aria-label="섹션 이동"><a href="#about" aria-current="location">소개</a><a href="#skills">기술</a><a href="#experience">경험</a><a href="#projects">프로젝트</a></nav><div class="header-tools">
+  <div class="header-controls"><nav aria-label="섹션 이동"><a href="#about" aria-current="location">소개</a><a href="#skills">기술</a><a href="#education">교육과 활동</a><a href="#experience">인턴 경험</a><a href="#projects">프로젝트</a></nav><div class="header-tools">
    <button class="icon-button" id="print-button" type="button" aria-label="이력서 인쇄 / PDF 저장" title="인쇄 및 PDF 저장" hidden><svg class="icon " aria-hidden="true"><use href="#icon-print"/></svg></button>
    <button class="icon-button" id="theme-button" type="button" aria-label="다크 모드로 전환" aria-pressed="false" title="다크 모드" hidden><svg class="icon theme-moon" aria-hidden="true"><use href="#icon-moon"/></svg><svg class="icon theme-sun" aria-hidden="true"><use href="#icon-sun"/></svg></button>
   </div></div>
@@ -34,65 +34,91 @@
     <h1 id="name">김지우<span>Kim Jiwoo / Backend Developer</span></h1>
     <p class="hero-description">Java와 Spring Boot, Python과 Django로 서비스를 만들고,<br class="wide-break"> 실제 사용 환경에서 마주친 문제를 개선해 왔습니다.</p>
     <ul class="contact-links" aria-label="연락처 및 링크"><li><a href="mailto:oxford1203@naver.com"><svg class="icon " aria-hidden="true"><use href="#icon-mail"/></svg>oxford1203@naver.com</a></li><li><a href="https://github.com/ryann1203" target="_blank" rel="noopener noreferrer"><svg class="icon " aria-hidden="true"><use href="#icon-github"/></svg>github.com/ryann1203</a></li><li><a href="https://alpine-oxygen-fc7.notion.site/Kim-Jiwoo-1b416794767c428582def2ec856fc6df" target="_blank" rel="noopener noreferrer"><svg class="icon " aria-hidden="true"><use href="#icon-page"/></svg>Notion</a></li></ul>
-   </div><img class="profile-photo" src="./assets/profile.jpg" alt="김지우 프로필 사진" width="168" height="168" fetchpriority="high"></div>
-   <dl class="hero-facts"><div><dt>주력 스택</dt><dd>Java, Spring Boot</dd></div><div><dt>서비스 운영</dt><dd>3개 학과 전시 아카이브</dd></div><div><dt>인턴 경험</dt><dd>IBK기업은행 디지털 인턴 (2개월)</dd></div></dl>
+   </div><img class="profile-photo" src="./assets/profile.jpg" alt="김지우 프로필 사진" width="1200" height="1543" fetchpriority="high"></div>
+   <dl class="hero-facts"><div><dt>주력 스택</dt><dd>Java, Spring Boot</dd></div><div><dt>서비스 운영</dt><dd>3개 학과 전시 아카이브</dd></div><div><dt>전공</dt><dd>동국대학교 컴퓨터공학전공</dd></div></dl>
   </div></section>
   <section class="section" id="about" aria-labelledby="about-title"><div class="container">
    <header class="section-heading"><p class="eyebrow">About</p><h2 id="about-title">소개</h2></header>
    <div class="about-text"><p>사용자의 불편을 발견하고, 서비스가 실제로 쓰이는 과정까지 경험해온 백엔드 개발자입니다. 졸업전시 아카이빙 플랫폼 <strong>DoLog</strong>의 백엔드 개발과 배포, 운영을 맡아 <strong>6개월간 누적 조회 6,500+회</strong>를 기록했으며, <strong>약 900명의 활성 사용자</strong>가 이용하는 서비스를 운영 중입니다.</p><p>대용량 데이터 조회와 캐시, 외부 API 장애 대응, 동시성 제어를 다루며 기능의 정확성과 운영 안정성을 함께 개선해 왔습니다.</p></div>
   </div></section>
   <section class="section" id="skills" aria-labelledby="skills-title"><div class="container">
-   <header class="section-heading"><p class="eyebrow">Skills</p><h2 id="skills-title">기술 스택</h2></header><div class="skill-grid"><div class="skill-card"><h3>Language</h3><ul class="tags"><li>Java</li><li>Python</li></ul></div><div class="skill-card"><h3>Framework</h3><ul class="tags"><li>Spring Boot</li><li>Spring Framework</li><li>MyBatis</li><li>Spring Data JPA</li><li>Spring Security</li><li>Django REST Framework</li></ul></div><div class="skill-card"><h3>Data &amp; Storage</h3><ul class="tags"><li>MySQL</li><li>AWS S3</li><li>Caffeine</li></ul></div><div class="skill-card"><h3>Infra &amp; DevOps</h3><ul class="tags"><li>AWS EC2</li><li>Docker</li><li>GitHub Actions</li><li>Git</li></ul></div></div>
+   <header class="section-heading"><p class="eyebrow">Skills</p><h2 id="skills-title">기술 스택</h2></header><div class="skill-grid"><div class="skill-card"><h3>Language</h3><ul class="tags"><li>Java</li><li>Python</li><li>C</li><li>JavaScript</li></ul></div><div class="skill-card"><h3>Framework</h3><ul class="tags"><li>Spring Boot</li><li>Spring Framework</li><li>MyBatis</li><li>Spring Data JPA</li><li>Spring Security</li><li>Django REST Framework</li></ul></div><div class="skill-card"><h3>Data &amp; Storage</h3><ul class="tags"><li>MySQL</li><li>Oracle</li><li>AWS S3</li></ul></div><div class="skill-card"><h3>Infra &amp; DevOps</h3><ul class="tags"><li>AWS EC2</li><li>Docker</li><li>GitHub Actions</li><li>Git</li></ul></div></div>
+  </div></section>
+  <section class="section" id="education" aria-labelledby="education-title"><div class="container">
+   <header class="section-heading"><p class="eyebrow">Education &amp; Activities</p><h2 id="education-title">교육과 활동</h2></header>
+   <div class="experience-list">
+    <div class="experience-row"><div><h3>KB국민은행 IT’s Your Life <span>7기</span></h3><p>IT 부트캠프, Java 기반 웹 개발과 팀 프로젝트</p></div><span class="row-date">2026.03 — 2026.08</span></div>
+    <div class="experience-row"><div><h3>동국대학교 멋쟁이사자처럼</h3><p>12기 백엔드, 13기 백엔드 운영진</p></div><span class="row-date">2024.03 — 2025.11</span></div>
+   </div>
+   <div class="awards" aria-labelledby="awards-title">
+    <h3 id="awards-title">수상 내역</h3>
+    <div class="experience-list">
+     <div class="experience-row"><div><h4>최우수상 <span>동국대학교 S.M.A.R.T. 토너먼트</span></h4><p>FedHybrid 연합학습 프로젝트</p></div><span class="row-date">2025.12</span></div>
+     <div class="experience-row"><div><h4>사업단장상 <span>CO-SHOW IoT &amp; AI Innovation 챌린지</span></h4><p>FedHybrid 연합학습 프로젝트</p></div><span class="row-date">2025.11</span></div>
+     <div class="experience-row"><div><h4>최우수상 <span>멋쟁이사자처럼 어흥콘</span></h4><p>표정 인식 네 컷 사진 서비스 치즈네컷</p></div><span class="row-date">2024.09</span></div>
+     <div class="experience-row"><div><h4>우수상 <span>동국대학교 FARM 경진대회</span></h4><p>표정 인식 네 컷 사진 서비스 치즈네컷</p></div><span class="row-date">2024.01</span></div>
+     <div class="experience-row"><div><h4>BEST 퍼포먼스상 <span>SW 대학생 봉사단 CJ UNIT 9기</span></h4><p>중학생을 위한 Python 기반 Lego STEAM 커리큘럼 제작</p></div><span class="row-date">2024.01</span></div>
+    </div>
+   </div>
   </div></section>
   <section class="section" id="experience" aria-labelledby="experience-title"><div class="container">
-   <header class="section-heading"><p class="eyebrow">Experience &amp; Education</p><h2 id="experience-title">경험과 교육</h2></header><div class="experience-list"><div class="experience-row"><div><h3>KB국민은행 IT’s Your Life <span>7기</span></h3><p>금융 IT 부트캠프</p></div><span class="row-date">2026.03 — 2026.08</span></div><div class="experience-row"><div><h3>동국대학교 멋쟁이사자처럼</h3><p>12기 백엔드, 13기 백엔드 운영진</p></div><span class="row-date">2024.03 — 2025.11</span></div><div class="experience-row"><div><h3>IBK기업은행 <span>디지털 직무 인턴</span></h3><p>32기 청년인턴 (2개월)</p></div><span class="row-date">2025.01 — 2025.02</span></div><div class="experience-row"><div><h3>동국대학교 <span>컴퓨터공학전공</span></h3></div><span class="row-date">학력</span></div></div>
+   <header class="section-heading"><p class="eyebrow">Experience</p><h2 id="experience-title">인턴 경험</h2></header>
+   <article class="internship" aria-labelledby="internship-title">
+    <header class="project-heading"><h3 id="internship-title">IBK기업은행</h3><span class="project-date">2025.01 — 2025.02 / 2개월</span></header>
+    <p class="project-role">디지털 직무 인턴 <span>기업개선부 / 32기 청년인턴</span></p>
+    <p class="project-description">업무시스템 운영과 문서 디지털화를 지원하고, 사용자 조사를 바탕으로 신규 서비스를 기획했습니다.</p>
+    <ul class="project-points">
+     <li>내부 업무시스템(BPR) 운영과 문서 디지털화를 지원하며 전산 데이터 관리와 업무 처리 과정을 경험했습니다.</li>
+     <li>기업 연계 과제에서 의료 특화 LLM 기반 돌봄 서비스 <strong>MediKozy</strong>를 기획하고, 기능 구성과 비즈니스 모델을 구체화했습니다.</li>
+     <li><strong>108명 대상 설문</strong>에서 서비스 이용 의향에 대한 <strong>긍정 응답 73.1%</strong>를 확인하고, 사용자 요구를 서비스 제안에 반영했습니다.</li>
+    </ul>
+   </article>
   </div></section>
   <section class="section" id="projects" aria-labelledby="projects-title"><div class="container">
    <header class="section-heading"><p class="eyebrow">Projects</p><h2 id="projects-title">프로젝트</h2></header>
    <div class="project-group"><header class="group-heading"><h3>백엔드 개발 및 운영</h3><p>데이터 정합성, 대용량 조회와 캐시, 서비스 배포 및 운영을 담당했습니다.</p></header>
    <article class="project" aria-labelledby="dolog-title">
  <header class="project-heading"><h4 id="dolog-title">DoLog — 대학 졸업전시 아카이빙 플랫폼 <span class="status">운영 중</span></h4><span class="project-date">2025.09 — 현재</span></header>
+ <p class="project-role">백엔드 개발과 서버 배포 및 운영 <span>기여도 30%</span></p>
  <p class="project-description">대학 졸업전시의 작품과 작가 정보를 기록하는 아카이빙 플랫폼을 개발하고, 서버 배포와 운영을 담당했습니다.</p>
- <ul class="project-points"><li>공동 작가 동시 제외 시 작품이 전시에 남는 문제를 <strong>전시 단위 비관적 잠금</strong>으로 해결했습니다. 빈도가 낮고 정합성이 중요한 관리자 요청은 같은 전시에서만 순차 처리하도록 DELETE와 PATCH를 통일했습니다. <strong>MySQL 8.4 Testcontainers 동시 테스트를 경로별 10회</strong> 수행해 마지막 작가 제외 후 작품의 전시와 구역 연결 해제를 검증했습니다.</li><li>작품, 전시 구역, 공동 작가와 작가 프로필을 <strong>fetch join</strong>으로 함께 조회하고 중복 결과를 제거해 N+1 문제를 개선했습니다. 작품명과 작가명 검색에도 같은 조회 방식을 적용했습니다.</li><li>작품 기본 정보와 공동 작가, 상세 이미지 변경을 <strong>하나의 트랜잭션</strong>으로 처리했습니다. 혼재한 로직을 작품 관리, 이미지 처리, 작가 연결, 전시 조회 기능으로 분리했습니다.</li><li>가로 1,600px 초과 이미지를 비율에 맞게 축소하고 <strong>WebP로 변환해 S3에 저장</strong>하는 공통 파일 서비스를 구현했습니다. 파일 형식과 콘텐츠 타입을 통일해 작품, 작가, 전시에서 재사용했습니다.</li><li><strong>3개 학과의 전시 아카이브 운영과 타 대학 유료 도입</strong>을 경험했습니다. 약 100개 학과에 연락해 요구사항을 조사하고, 개발자의 직접 입력을 줄이는 학과별 관리자 기능을 개발하고 있습니다.</li></ul>
- <p class="contribution">담당: 백엔드 개발과 서버 배포 및 운영 (기여도 30%)</p>
+ <ul class="project-points"><li>공동 작가를 동시에 제외하면 작품이 전시에 남는 문제를 <strong>전시 단위 비관적 잠금</strong>으로 해결했습니다. 같은 전시의 변경 요청만 순차 처리하고, 동시 요청 테스트로 데이터 정합성을 검증했습니다.</li><li>작품과 작가 정보를 <strong>fetch join</strong>으로 함께 조회해, 작품 수에 따라 반복 쿼리가 증가하는 <strong>N+1 문제</strong>를 개선했습니다.</li><li>작품 정보와 공동 작가, 이미지 변경을 <strong>하나의 트랜잭션</strong>으로 처리했습니다. 작품 관리와 이미지 처리 등 혼재한 로직을 기능별로 분리해 변경 영향을 줄였습니다.</li><li>큰 이미지를 비율에 맞게 축소하고 <strong>WebP로 변환해 S3에 저장</strong>하는 공통 파일 서비스를 구현해 작품, 작가, 전시의 이미지 처리 방식을 통일했습니다.</li><li>서비스를 <strong>3개 학과에서 운영하고 타 대학에 유료 도입</strong>했습니다. 학과별 요구사항을 조사해 전시와 작품을 직접 등록하는 관리자 기능을 개발하고 있습니다.</li></ul>
  <div class="project-links"><a href="http://dolog.kr" target="_blank" rel="noopener noreferrer">dolog.kr ↗</a><a href="https://github.com/DoLog-Team/DoLog-BE" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/DoLog-3e3cc07a719a80689e90d5cdc443e3fc" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
  <ul class="tags" aria-label="DoLog 사용 기술"><li>Java 17</li><li>Spring Boot</li><li>Spring Data JPA</li><li>Spring Security</li><li>MySQL</li><li>AWS S3</li><li>Docker</li><li>GitHub Actions</li></ul>
 </article><article class="project" aria-labelledby="homedeal-title">
  <header class="project-heading"><h4 id="homedeal-title">KB HomeDeal — 부동산 거래 의사결정 플랫폼</h4><span class="project-date">2026.03 — 2026.08</span></header>
+ <p class="project-role">백엔드 개발 <span>기여도 30% / KB IT’s Your Life 7기</span></p>
  <p class="project-description">실거래가와 금융 규정을 결합해 부동산 거래의 적정 가격과 협상 구간을 제시하는 플랫폼의 백엔드를 개발했습니다.</p>
  <ul class="project-points">
-  <li>약 <strong>600만 건의 매매 및 임대 데이터</strong>를 요청마다 집계하던 지도 API를 요약 테이블과 범위 제한 쿼리, 인덱스로 개선했습니다. 새 요약 데이터를 스테이징 테이블에 완성한 뒤 한 번에 교체해 갱신 중 불완전한 데이터가 조회되지 않도록 했습니다.</li>
-  <li>자연키를 기반으로 <strong>SHA-256 생성 컬럼</strong>을 구성하고 DB UNIQUE 제약과 INSERT IGNORE로 중복 적재를 막았습니다. 사전 조회에 의존하지 않아 동시 수집과 배치 재실행에서도 동일 거래가 중복 저장되지 않도록 했습니다.</li>
-  <li>건축HUB 실시간 호출을 <strong>Quartz 사전 수집</strong>으로 바꿔 외부 API의 500 오류와 지연을 사용자 요청에서 분리했습니다. 하루 최대 300개 아파트를 5개 스레드로 수집하고, 통신 오류는 재시도하되 실제 데이터 미존재만 NOT_FOUND로 구분했습니다.</li>
-  <li>세금과 LTV, DSR, DTI 규정을 <strong>적용 기간이 있는 DB 기준정보</strong>로 관리하고 계산, 검증, 서비스 책임을 분리했습니다. 가격 구간별 LTV 때문에 발생하는 매수 상한가 순환참조는 이진탐색으로 해결했습니다.</li>
-  <li>최대 5,000개 항목을 보관하는 TTL 10분의 <strong>Caffeine 캐시</strong>를 적용했습니다. 조회 조건, 줌 단계, 좌표를 정규화해 캐시 키를 재사용하고, 동일 키의 동시 캐시 미스는 Cache.get()으로 한 번만 조회하도록 했습니다.</li>
-  <li>캐시 ON/OFF 비교에서 p95 응답시간을 <strong>동 요약 7.84ms → 1.59ms (79.7%)</strong>, <strong>아파트 마커 8.25ms → 1.72ms (79.2%)</strong>로 단축했으며, 총 42,798건의 요청에서 오류율 0%를 기록했습니다.</li>
+  <li>약 <strong>600만 건의 실거래 데이터</strong>를 매번 집계하던 지도 API의 타임아웃을 <strong>요약 테이블과 인덱스</strong>로 개선했습니다. 갱신 데이터는 완성 후 한 번에 교체해 조회 중에도 일관된 결과를 제공하도록 했습니다.</li>
+  <li>거래 식별값에 <strong>DB UNIQUE 제약</strong>을 적용해 중복 저장을 막았습니다. 동시에 수집하거나 배치를 재실행해도 같은 거래가 중복 적재되지 않도록 했습니다.</li>
+  <li>건축물 정보를 요청 시점에 외부 API에서 가져오던 방식을 <strong>Quartz 기반 사전 수집</strong>으로 변경했습니다. 외부 기관의 오류와 응답 지연이 사용자 조회 실패로 이어지지 않도록 했습니다.</li>
+  <li><strong>세금과 대출 기준을 DB에서 관리</strong>하고 가격 계산 기능을 분리해, 규정이 바뀌어도 수정하기 쉬운 구조로 설계했습니다.</li>
+  <li>지도 조회에 <strong>Caffeine 캐시</strong>를 적용하고, 같은 데이터에 대한 동시 요청의 중복 조회를 막았습니다. 반복 조회 테스트에서 <strong>p95 응답시간을 약 79% 단축</strong>했습니다.</li>
  </ul>
- <p class="measurement-note">측정 조건: 요약 테이블이 적용된 로컬 축소 데이터셋의 동일 지도 영역 반복 조회. k6로 10 → 20 → 30 VU의 4분 부하를 캐시 ON/OFF 각각 3회 수행한 중앙값이며, 최대 처리량 비교가 아닌 응답시간 비교입니다.</p>
- <p class="contribution">담당: 백엔드 (기여도 30%) / KB IT’s Your Life 7기</p>
+ <p class="measurement-note">측정 기준: 요약 테이블이 적용된 로컬 축소 데이터셋의 동일 지도 영역 반복 조회. 캐시 적용 전후 각 3회 측정의 중앙값입니다.</p>
  <p class="measurement-note">GitHub 저장소 비공개</p>
  <ul class="tags" aria-label="KB HomeDeal 사용 기술"><li>Java 11</li><li>Spring Framework</li><li>MyBatis</li><li>MySQL</li><li>Quartz</li><li>Caffeine</li><li>k6</li></ul>
 </article><article class="project" aria-labelledby="booth-title">
  <header class="project-heading"><h4 id="booth-title">부스끼리 — 동국대학교 가을 대동제 정보 서비스 </h4><span class="project-date">2024.09 — 2024.10</span></header>
+ <p class="project-role">백엔드 개발 <span>부스 검색 및 조회 API</span></p>
  <p class="project-description">2,500명 이상이 이용한 동국대학교 축제 서비스에서 부스 정보 검색과 조회 API를 개발했습니다.</p>
  <ul class="project-points"><li>Django REST Framework로 Booth와 BoothDetail을 모델링하고, 부스 목록과 상세 정보 조회 API를 개발했습니다.</li><li>django-filter를 활용해 <strong>날짜, 카테고리, 위치, 예약 가능 여부</strong>를 조합하는 조회 로직을 구현했습니다.</li><li>부스별 설명, 메뉴, SNS 링크와 이미지를 직렬화하고, 다중 이미지 업로드와 URL 변환을 지원했습니다.</li><li>프론트엔드가 일관된 구조로 데이터를 사용할 수 있도록 응답 포맷과 정렬 로직을 적용했습니다.</li></ul>
- <p class="contribution">담당: 백엔드, 부스 검색 및 조회 API</p>
  <div class="project-links"><a href="https://github.com/LikeLion-at-DGU/2024_fall_festival_back" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/1b6cc07a719a801c8394de6dcde7767a" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
  <ul class="tags" aria-label="부스끼리 사용 기술"><li>Python</li><li>Django REST Framework</li><li>django-filter</li></ul>
 </article></div>
    <div class="project-group"><header class="group-heading"><h3>연구 및 접근성 프로젝트</h3><p>분산 학습의 통신 비용과 사용자의 접근성 문제를 실험하고 개선했습니다.</p></header>
    <article class="project" aria-labelledby="fed-title">
  <header class="project-heading"><h4 id="fed-title">FedHybrid — 데이터 불균형에 대응하는 연합학습 </h4><span class="project-date">2025.03 — 2025.12</span></header>
+ <p class="project-role">연합학습 구조 설계와 실험 <span>분석 및 모니터링 대시보드</span></p>
  <p class="project-description">기관별 원본 데이터를 공유하지 않는 연합학습 파이프라인을 구현하고, 모델 업데이트 압축으로 통신 비용을 개선했습니다.</p>
  <ul class="project-points"><li>글로벌 모델 배포부터 로컬 학습, 업데이트 수집과 집계, 다음 라운드 진행까지 연결하고 참여 기관 수와 대기 시간에 따른 집계 조건을 구현했습니다.</li><li>중요한 업데이트만 선별하고 <strong>8-bit 양자화와 가지치기</strong>를 적용해 통신 비용을 약 <strong>70~85% 절감</strong>했습니다(프로젝트 실험 기준).</li><li>CKKS로 암호화한 모델 업데이트를 전송하고 서버에서 복호화한 뒤 집계하도록 연결했습니다. FedAvg와 FedProx 등 선행 기법과 동일 조건에서 성능을 비교했습니다.</li><li>데이터 업로드, 학습 로그, 정확도 차트와 환자별 예측 결과 다운로드를 제공하는 웹 대시보드를 구현했습니다.</li></ul>
- <p class="contribution">담당: 연합학습 구조 설계, 실험 및 분석, 모니터링 대시보드<br>2025 동국대학교 S.M.A.R.T. 토너먼트 최우수상, CO-SHOW 사업단장상</p>
  <div class="project-links"><a href="https://github.com/FedHybrid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/FedHybrid-2eecc07a719a805da8afea2ebdd60c57" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
  <ul class="tags" aria-label="FedHybrid 사용 기술"><li>Python</li><li>PyTorch</li><li>FedAvg</li><li>FedProx</li><li>CKKS</li><li>Next.js</li></ul>
 </article><article class="project" aria-labelledby="voisk-title">
  <header class="project-heading"><h4 id="voisk-title">Voisk — NFC 기반 접근성 주문 시스템 </h4><span class="project-date">2024.09 — 2024.12</span></header>
+ <p class="project-role">프론트엔드 개발 <span>접근성 화면과 주문 상태 관리, API 연동</span></p>
  <p class="project-description">시각장애인이 스마트폰으로 주문할 수 있도록 접근성 화면과 주문 상태 관리, 서버 API 연동을 구현했습니다.</p>
- <ul class="project-points"><li>한 화면에서 하나의 선택을 수행하는 순차적 구조로 메뉴, 옵션, 수량, 장바구니와 주문번호까지 이어지는 주문 흐름을 구현했습니다.</li><li>localStorage로 페이지 간 선택 상태와 장바구니를 유지하고, Fetch API로 주문을 전송해 응답의 주문번호를 표시했습니다.</li><li>VoiceOver로 아이스 아메리카노를 주문하는 비교 실험에서 동작 수를 <strong>메가커피 앱 129회 → Voisk 35회</strong>로 줄였습니다. 프로젝트 결과물로 특허를 출원했습니다.</li></ul>
- <p class="contribution">담당: 프론트엔드, 접근성 화면, 주문 상태 및 API 연동</p>
+ <ul class="project-points"><li>한 화면에서 하나의 선택을 수행하는 순차적 구조로 메뉴, 옵션, 수량, 장바구니와 주문번호까지 이어지는 주문 흐름을 구현했습니다.</li><li>localStorage로 페이지 간 선택 상태와 장바구니를 유지하고, Fetch API로 주문을 전송해 응답의 주문번호를 표시했습니다.</li><li>VoiceOver로 아이스 아메리카노를 주문하는 비교 실험에서 동작 수를 <strong>메가커피 앱 129회 → Voisk 35회</strong>로 줄였습니다. 현재 <strong>특허 출원 진행 중</strong>입니다.</li></ul>
  <div class="project-links"><a href="https://github.com/CSID-DGU/2024-2-DES4025-Passengers-02" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/NFC-Voisk-0aa537f149d043e1aef54485089f7659" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
  <ul class="tags" aria-label="Voisk 사용 기술"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch API</li><li>VoiceOver</li><li>TalkBack</li></ul>
 </article></div>
