@@ -29,6 +29,30 @@
     });
   }
 
+  // Native dialogs keep keyboard focus inside, support Escape, and leave the URL unchanged.
+  document.querySelectorAll('[data-dialog]').forEach((trigger) => {
+    const dialog = document.getElementById(trigger.dataset.dialog);
+    if (!dialog || typeof dialog.showModal !== 'function') return;
+
+    trigger.hidden = false;
+    trigger.addEventListener('click', () => {
+      dialog.showModal();
+      dialog.scrollTop = 0;
+      root.classList.add('dialog-open');
+    });
+    dialog.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (event) => {
+      if (event.target !== dialog) return;
+      const bounds = dialog.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right ||
+          event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+    });
+    dialog.addEventListener('close', () => {
+      root.classList.remove('dialog-open');
+      trigger.focus({ preventScroll: true });
+    });
+  });
+
   const links = [...document.querySelectorAll('nav a[href^="#"]')];
   const sections = links.map(link => document.querySelector(link.hash)).filter(Boolean);
   const updateNavigation = () => {

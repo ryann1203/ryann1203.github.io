@@ -50,8 +50,8 @@
     <div class="experience-row"><div><h3>KB국민은행 IT’s Your Life <span>7기</span></h3><p>IT 부트캠프, Java 기반 웹 개발과 팀 프로젝트</p></div><span class="row-date">2026.03 — 2026.08</span></div>
     <div class="experience-row"><div><h3>AWS Cloud Clubs at DGU <span>1기</span></h3><p>백엔드, 클라우드, 인프라</p></div><span class="row-date">2025.06 — 2026.02</span></div>
     <div class="experience-row"><div><h3>동국대학교 멋쟁이사자처럼</h3><p>12기 백엔드, 13기 백엔드 운영진</p></div><span class="row-date">2024.03 — 2025.11</span></div>
-    <div class="experience-row"><div><h3>SW 융합 기술 동아리 Farm System <span>1기</span></h3><p>웹 개발</p></div><span class="row-date">2023.05 — 2024.02</span></div>
-    <div class="experience-row"><div><h3>CJ SW창의캠프 대학생 봉사단 CJ UNIT <span>9기</span></h3></div><span class="row-date">2023.08 — 2023.12</span></div>
+    <div class="experience-row"><div><h3>동국대학교 SW동아리 Farm System <span>1기</span></h3><p>웹 개발 트랙</p></div><span class="row-date">2023.05 — 2024.02</span></div>
+    <div class="experience-row"><div><h3>SW창의캠프 대학생 봉사단 CJ UNIT <span>9기</span></h3></div><span class="row-date">2023.08 — 2023.12</span></div>
    </div>
    <div class="awards" aria-labelledby="awards-title">
     <h3 id="awards-title">수상 내역</h3>
@@ -59,7 +59,7 @@
      <div class="experience-row"><div><h4>최우수상 <span>동국대학교 S.M.A.R.T. 토너먼트</span></h4><p>FedHybrid 연합학습 프로젝트</p></div><span class="row-date">2025.12</span></div>
      <div class="experience-row"><div><h4>사업단장상 <span>CO-SHOW IoT &amp; AI Innovation 챌린지</span></h4><p>FedHybrid 연합학습 프로젝트</p></div><span class="row-date">2025.11</span></div>
      <div class="experience-row"><div><h4>우수상 <span>동국대학교 FARM 경진대회</span></h4><p>표정 인식 네 컷 사진 서비스 치즈네컷</p></div><span class="row-date">2024.01</span></div>
-     <div class="experience-row"><div><h4>BEST 퍼포먼스상 <span>SW 대학생 봉사단 CJ UNIT 9기</span></h4><p>중학생을 위한 Python 기반 Lego STEAM 커리큘럼 제작</p></div><span class="row-date">2024.01</span></div>
+     <div class="experience-row"><div><h4>BEST 퍼포먼스상 <span>SW창의캠프 대학생 봉사단 CJ UNIT 9기</span></h4><p>중학생을 위한 Python 기반 Lego STEAM 커리큘럼 제작</p></div><span class="row-date">2024.01</span></div>
     </div>
    </div>
   </div></section>
@@ -85,7 +85,7 @@
  <div class="project-content">
  <p class="project-description">대학 졸업전시의 작품과 작가 정보를 기록하는 아카이빙 플랫폼을 개발하고, 서버 배포와 운영을 담당했습니다.</p>
  <ul class="project-points"><li>공동 작가를 동시에 제외하면 작품이 전시에 남는 문제를 <strong>전시 단위 비관적 잠금</strong>으로 해결했습니다. 같은 전시의 변경 요청만 순차 처리하고, 동시 요청 테스트로 데이터 정합성을 검증했습니다.</li><li>작품과 작가 정보를 <strong>fetch join</strong>으로 함께 조회해, 작품 수에 따라 반복 쿼리가 증가하는 <strong>N+1 문제</strong>를 개선했습니다.</li><li>작품 정보와 공동 작가, 이미지 변경을 <strong>하나의 트랜잭션</strong>으로 처리했습니다. 작품 관리와 이미지 처리 등 혼재한 로직을 기능별로 분리해 변경 영향을 줄였습니다.</li><li>큰 이미지를 비율에 맞게 축소하고 <strong>WebP로 변환해 S3에 저장</strong>하는 공통 파일 서비스를 구현해 작품, 작가, 전시의 이미지 처리 방식을 통일했습니다.</li><li>서비스를 <strong>3개 학과에서 운영하고 타 대학에 유료 도입</strong>했습니다. 학과별 요구사항을 조사해 전시와 작품을 직접 등록하는 관리자 기능을 개발하고 있습니다.</li></ul>
- <div class="project-links"><a href="http://dolog.kr" target="_blank" rel="noopener noreferrer">dolog.kr ↗</a><a href="https://github.com/DoLog-Team/DoLog-BE" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/DoLog-3e3cc07a719a80689e90d5cdc443e3fc" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <div class="project-links"><a href="http://dolog.kr" target="_blank" rel="noopener noreferrer">dolog.kr ↗</a><a href="https://github.com/DoLog-Team/DoLog-BE" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button class="detail-button" type="button" data-dialog="dolog-details" aria-haspopup="dialog" aria-controls="dolog-details" aria-label="DoLog 상세 기록 열기" hidden>상세 기록</button></div>
  <ul class="tags" aria-label="DoLog 사용 기술"><li>Java 17</li><li>Spring Boot</li><li>Spring Data JPA</li><li>Spring Security</li><li>MySQL</li><li>AWS S3</li><li>Docker</li><li>GitHub Actions</li></ul>
  </div>
 </article><article class="project" aria-labelledby="homedeal-title">
@@ -110,7 +110,7 @@
  <div class="project-content">
  <p class="project-description">2,500명 이상이 이용한 동국대학교 축제 서비스에서 부스 정보 검색과 조회 API를 개발했습니다.</p>
  <ul class="project-points"><li>Django REST Framework로 Booth와 BoothDetail을 모델링하고, 부스 목록과 상세 정보 조회 API를 개발했습니다.</li><li>django-filter를 활용해 <strong>날짜, 카테고리, 위치, 예약 가능 여부</strong>를 조합하는 조회 로직을 구현했습니다.</li><li>부스별 설명, 메뉴, SNS 링크와 이미지를 직렬화하고, 다중 이미지 업로드와 URL 변환을 지원했습니다.</li><li>프론트엔드가 일관된 구조로 데이터를 사용할 수 있도록 응답 포맷과 정렬 로직을 적용했습니다.</li></ul>
- <div class="project-links"><a href="https://github.com/LikeLion-at-DGU/2024_fall_festival_back" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/1b6cc07a719a801c8394de6dcde7767a" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <div class="project-links"><a href="https://github.com/LikeLion-at-DGU/2024_fall_festival_back" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button class="detail-button" type="button" data-dialog="booth-details" aria-haspopup="dialog" aria-controls="booth-details" aria-label="부스끼리 상세 기록 열기" hidden>상세 기록</button></div>
  <ul class="tags" aria-label="부스끼리 사용 기술"><li>Python</li><li>Django REST Framework</li><li>django-filter</li></ul>
  </div>
 </article></div>
@@ -120,8 +120,8 @@
  <p class="project-role">연합학습 구조 설계와 실험 <span>분석 및 모니터링 대시보드</span></p>
  <div class="project-content">
  <p class="project-description">기관별 원본 데이터를 공유하지 않는 연합학습 파이프라인을 구현하고, 모델 업데이트 압축으로 통신 비용을 개선했습니다.</p>
- <ul class="project-points"><li>글로벌 모델 배포부터 로컬 학습, 업데이트 수집과 집계, 다음 라운드 진행까지 연결하고 참여 기관 수와 대기 시간에 따른 집계 조건을 구현했습니다.</li><li>중요한 업데이트만 선별하고 <strong>8-bit 양자화와 가지치기</strong>를 적용해 통신 비용을 약 <strong>70~85% 절감</strong>했습니다(프로젝트 실험 기준).</li><li>CKKS로 암호화한 모델 업데이트를 전송하고 서버에서 복호화한 뒤 집계하도록 연결했습니다. FedAvg와 FedProx 등 선행 기법과 동일 조건에서 성능을 비교했습니다.</li><li>데이터 업로드, 학습 로그, 정확도 차트와 환자별 예측 결과 다운로드를 제공하는 웹 대시보드를 구현했습니다.</li></ul>
- <div class="project-links"><a href="https://github.com/FedHybrid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/FedHybrid-2eecc07a719a805da8afea2ebdd60c57" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <ul class="project-points"><li>글로벌 모델 배포부터 로컬 학습, 업데이트 수집과 집계, 다음 라운드 진행까지 연결하고 참여 기관 수와 대기 시간에 따른 집계 조건을 구현했습니다.</li><li><strong>학습 결과에서 중요한 변화만 골라 압축해 전송</strong>하고, 통신 비용을 약 <strong>70~85% 절감</strong>했습니다(프로젝트 실험 기준).</li><li>CKKS로 암호화한 모델 업데이트를 전송하고 서버에서 복호화한 뒤 집계하도록 연결했습니다. FedAvg와 FedProx 등 선행 기법과 동일 조건에서 성능을 비교했습니다.</li><li>데이터 업로드, 학습 로그, 정확도 차트와 환자별 예측 결과 다운로드를 제공하는 웹 대시보드를 구현했습니다.</li></ul>
+ <div class="project-links"><a href="https://github.com/FedHybrid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button class="detail-button" type="button" data-dialog="fed-details" aria-haspopup="dialog" aria-controls="fed-details" aria-label="FedHybrid 상세 기록 열기" hidden>상세 기록</button></div>
  <ul class="tags" aria-label="FedHybrid 사용 기술"><li>Python</li><li>PyTorch</li><li>FedAvg</li><li>FedProx</li><li>CKKS</li><li>Next.js</li></ul>
  </div>
 </article><article class="project" aria-labelledby="voisk-title">
@@ -130,12 +130,44 @@
  <div class="project-content">
  <p class="project-description">시각장애인이 스마트폰으로 주문할 수 있도록 접근성 화면과 주문 상태 관리, 서버 API 연동을 구현했습니다.</p>
  <ul class="project-points"><li>한 화면에서 하나의 선택을 수행하는 순차적 구조로 메뉴, 옵션, 수량, 장바구니와 주문번호까지 이어지는 주문 흐름을 구현했습니다.</li><li>localStorage로 페이지 간 선택 상태와 장바구니를 유지하고, Fetch API로 주문을 전송해 응답의 주문번호를 표시했습니다.</li><li>VoiceOver로 아이스 아메리카노를 주문하는 비교 실험에서 동작 수를 <strong>메가커피 앱 129회 → Voisk 35회</strong>로 줄였습니다. 현재 <strong>특허 출원 진행 중</strong>입니다.</li></ul>
- <div class="project-links"><a href="https://github.com/CSID-DGU/2024-2-DES4025-Passengers-02" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/NFC-Voisk-0aa537f149d043e1aef54485089f7659" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <div class="project-links"><a href="https://github.com/CSID-DGU/2024-2-DES4025-Passengers-02" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button class="detail-button" type="button" data-dialog="voisk-details" aria-haspopup="dialog" aria-controls="voisk-details" aria-label="Voisk 상세 기록 열기" hidden>상세 기록</button></div>
  <ul class="tags" aria-label="Voisk 사용 기술"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch API</li><li>VoiceOver</li><li>TalkBack</li></ul>
  </div>
 </article></div>
   </div></section>
  </main>
+ <dialog class="project-dialog" id="dolog-details" aria-labelledby="dolog-details-title">
+  <header class="dialog-heading"><div><p class="eyebrow">Project Details</p><h2 id="dolog-details-title">DoLog</h2><p class="dialog-meta">백엔드 개발과 서버 배포 및 운영 / 기여도 30%<br>2025.09 — 현재</p></div><button class="dialog-close" type="button" aria-label="상세 기록 닫기" autofocus>×</button></header>
+  <div class="dialog-body">
+   <section class="detail-section"><h3>만든 이유</h3><p>졸업전시가 끝난 뒤 흩어지는 작품과 작가 정보를 한곳에 기록하고, 전시 종료 후에도 관람할 수 있도록 만든 서비스입니다.</p></section>
+   <section class="detail-section"><h3>핵심 기여</h3><ul><li>작품과 작가, 전시의 관계를 설계하고 등록 및 조회 API를 개발했습니다. 함께 변경되는 정보는 하나의 트랜잭션으로 처리하고 반복 조회와 동시 수정 문제를 개선했습니다.</li><li>이미지 축소와 WebP 변환, S3 저장을 공통 기능으로 만들고 서버 배포와 운영 상태 확인을 담당했습니다.</li></ul></section>
+   <section class="detail-section"><h3>운영 결과와 다음 단계</h3><p><strong>6개월간 누적 조회 6,500+회, 활성 사용자 약 900명</strong>을 기록했습니다. 3개 학과의 전시를 운영하고 타 대학 유료 도입으로 확장했으며, 현재는 학과가 전시와 작품을 직접 관리하는 기능을 개발 중입니다.</p></section>
+  </div>
+ </dialog>
+ <dialog class="project-dialog" id="booth-details" aria-labelledby="booth-details-title">
+  <header class="dialog-heading"><div><p class="eyebrow">Project Details</p><h2 id="booth-details-title">부스끼리</h2><p class="dialog-meta">백엔드 개발 / 부스 검색 및 조회 API<br>2024.09 — 2024.10</p></div><button class="dialog-close" type="button" aria-label="상세 기록 닫기" autofocus>×</button></header>
+  <div class="dialog-body">
+   <section class="detail-section"><h3>서비스 배경</h3><p>동국대학교 가을 축제 기간에 부스와 푸드트럭의 위치, 메뉴, 운영 정보를 쉽게 찾도록 만든 서비스입니다.</p></section>
+   <section class="detail-section"><h3>핵심 기여</h3><ul><li>Django REST Framework로 부스와 상세 정보의 데이터 구조를 설계하고, 날짜와 위치 등 여러 조건을 조합하는 검색 API를 구현했습니다.</li><li>메뉴와 이미지, SNS 링크를 일관된 응답 형식으로 제공하고 다중 이미지 업로드를 지원해 프론트엔드 연동을 도왔습니다.</li></ul></section>
+   <section class="detail-section"><h3>운영 결과</h3><p><strong>2,500명 이상이 이용한 축제 서비스</strong>에서 부스 정보 탐색 기능을 담당했습니다. 여러 검색 조건과 상세 데이터를 하나의 API 흐름으로 연결했습니다.</p></section>
+  </div>
+ </dialog>
+ <dialog class="project-dialog" id="fed-details" aria-labelledby="fed-details-title">
+  <header class="dialog-heading"><div><p class="eyebrow">Project Details</p><h2 id="fed-details-title">FedHybrid</h2><p class="dialog-meta">연합학습 구조 설계와 실험, 모니터링 대시보드<br>2025.03 — 2025.12</p></div><button class="dialog-close" type="button" aria-label="상세 기록 닫기" autofocus>×</button></header>
+  <div class="dialog-body">
+   <section class="detail-section"><h3>풀고자 한 문제</h3><p>기관마다 데이터의 양과 특성이 다르고 원본을 외부에 공유하기 어렵다는 문제에 대응했습니다. 각 기관이 자체 데이터로 학습한 결과를 모아 하나의 공통 모델을 만드는 구조입니다.</p></section>
+   <section class="detail-section"><h3>핵심 기여</h3><ul><li>서버의 모델 배포부터 기관별 학습, 결과 수집과 통합까지 연결했습니다. 학습 결과를 암호화해 전송하고 중요한 변화만 압축해 통신량을 줄였습니다.</li><li>데이터 업로드와 학습 로그, 정확도 차트, 예측 결과 다운로드를 제공하는 대시보드를 구현했습니다.</li></ul></section>
+   <section class="detail-section"><h3>검증 결과</h3><p>데이터가 고르게 분포한 환경과 기관별 편차가 큰 환경을 나눠 기존 기법과 비교했습니다. <strong>프로젝트 실험에서 통신 비용을 약 70~85% 절감</strong>했습니다.</p></section>
+  </div>
+ </dialog>
+ <dialog class="project-dialog" id="voisk-details" aria-labelledby="voisk-details-title">
+  <header class="dialog-heading"><div><p class="eyebrow">Project Details</p><h2 id="voisk-details-title">Voisk</h2><p class="dialog-meta">프론트엔드 개발 / 접근성 주문 화면과 API 연동<br>2024.09 — 2024.12</p></div><button class="dialog-close" type="button" aria-label="상세 기록 닫기" autofocus>×</button></header>
+  <div class="dialog-body">
+   <section class="detail-section"><h3>풀고자 한 문제</h3><p>시각 중심의 키오스크를 혼자 사용하기 어려운 사용자를 위해, NFC 태그로 자신의 스마트폰에 접속해 화면 읽기 기능으로 주문하는 흐름을 만들었습니다.</p></section>
+   <section class="detail-section"><h3>핵심 기여</h3><ul><li>한 화면에 하나의 선택만 두어 메뉴 선택부터 장바구니, 주문번호 확인까지 불필요한 탐색을 줄였습니다.</li><li>화면이 바뀌어도 주문 상태를 유지하고 서버에 주문을 전송하도록 연결했습니다. 빈 장바구니와 오류 응답도 처리했습니다.</li></ul></section>
+   <section class="detail-section"><h3>확인한 결과</h3><p>VoiceOver로 아이스 아메리카노를 주문하는 비교 실험에서 동작 수를 <strong>메가커피 앱 129회에서 Voisk 35회</strong>로 줄였습니다. 프로젝트 결과물은 <strong>특허 출원 진행 중</strong>입니다.</p></section>
+  </div>
+ </dialog>
  <footer class="site-footer"><div class="container"><span>Last updated 2026. 10. 28</span><span aria-hidden="true"> / </span><a href="https://github.com/ryann1203/ryann1203.github.io/tree/codex/jiwoo-portfolio/docs" target="_blank" rel="noopener noreferrer">source on GitHub</a></div></footer>
 </body>
 </html>
