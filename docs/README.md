@@ -1,12 +1,12 @@
 # 김지우 / Backend Developer
 
-노션 포트폴리오와 사용자 제공 자료를 바탕으로 핵심을 추린 정적 포트폴리오입니다. 프로필과 학력 → 소개 → 기술 스택 → 교육과 활동 → 수상 내역 → 인턴 경험 → 프로젝트 순서로 구성했습니다. 흰색과 차가운 회색에 옅은 파란색을 사용하고, 프로젝트 설명은 카드 안에 최대 5개 항목으로 표시합니다. 프로젝트 이름과 담당 역할은 설명 카드 바깥 위쪽에 배치했습니다. DoLog, 부스끼리, FedHybrid, Voisk의 상세 기록은 노션으로 이동하지 않고 핵심 요약 팝업으로 열립니다. 모바일 화면, 키보드 탐색, 라이트 및 다크 모드, 인쇄용 레이아웃을 지원합니다. 별도 빌드나 패키지 설치가 필요하지 않습니다.
+노션 포트폴리오와 사용자 제공 자료를 바탕으로 핵심을 추린 정적 포트폴리오입니다. 프로필과 학력 → 소개 → 기술 스택 → 교육과 활동 → 수상 내역 → 인턴 경험 → 프로젝트 순서로 구성했습니다. 흰색과 차가운 회색에 옅은 파란색을 사용하고, 프로젝트 설명은 카드 안에 최대 5개 항목으로 표시합니다. 프로젝트 이름과 담당 역할은 설명 카드 바깥 위쪽에 배치했습니다. DoLog, 부스끼리, FedHybrid, Voisk의 상세 기록은 노션으로 이동하지 않고 서비스 이미지와 구현 과정을 담은 팝업으로 열립니다. 팝업 안에서 스크롤하며 읽을 수 있습니다. 모바일 화면, 키보드 탐색, 라이트 및 다크 모드, 인쇄용 레이아웃을 지원합니다. 별도 빌드나 패키지 설치가 필요하지 않습니다.
 
 ## GitHub Pages 배포
 
-1. 기존 저장소 `ryann1203/ryann1203.github.io`의 `master`에는 이전 React 템플릿이 있습니다. 새 포트폴리오는 **`codex/jiwoo-portfolio` 브랜치의 `/docs`**에 준비합니다.
+1. 기존 저장소 `ryann1203/ryann1203.github.io`의 `master`에는 이전 React 템플릿이 있습니다. 현재 포트폴리오는 **`jiwoo-portfolio` 브랜치의 `/docs`**에 있습니다.
 2. 이 폴더의 `index.html`, `styles.css`, `script.js`, `favicon.svg`, `.nojekyll`과 `assets` 폴더를 해당 브랜치의 `/docs`에 둡니다. 기존 템플릿 파일을 삭제할 필요가 없습니다.
-3. 저장소 **Settings → Pages → Build and deployment**에서 **Deploy from a branch**, 브랜치 **codex/jiwoo-portfolio**, 폴더 **/docs**를 선택하고 저장합니다.
+3. 저장소 **Settings → Pages → Build and deployment**에서 **Deploy from a branch**, 브랜치 **jiwoo-portfolio**, 폴더 **/docs**를 선택하고 저장합니다.
 4. GitHub의 배포 완료 표시와 Visit site 링크를 확인합니다. 배포 후 예상 주소는 `https://ryann1203.github.io/`입니다.
 
 공식 안내: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
@@ -23,6 +23,7 @@
 - 색·글자·배치·모바일·인쇄 스타일: `styles.css`
 - 현재 목차 강조·인쇄·테마 전환: `script.js`
 - 프로필 사진: `assets/profile.jpg` (기존 노션 프로필 사진, 원본 비율을 유지해 표시)
+- 프로젝트 이미지: `assets/projects/` (프로젝트 노션에서 가져온 원본 PNG, 비율을 유지하고 필요한 시점에 로드)
 - 상단 인쇄 아이콘 또는 브라우저의 인쇄 기능으로 저장합니다. 프로젝트 설명은 기본으로 모두 표시됩니다.
 - 상세 기록은 `index.html`의 `<dialog>`에서 수정합니다. 팝업은 닫기 버튼, Escape 키, 바깥 영역 클릭으로 닫히며, 닫은 뒤 원래 버튼으로 키보드 초점이 돌아갑니다. 팝업을 열어도 주소와 배경의 스크롤 위치는 유지됩니다. 최신 브라우저와 JavaScript가 필요하며 인쇄 시 팝업은 제외됩니다.
 - 서체는 Pretendard 1.3.9의 고정 버전 CDN을 사용합니다. 연결이 안 되면 시스템 서체로 표시됩니다.
