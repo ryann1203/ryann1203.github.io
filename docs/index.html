@@ -1,89 +1,95 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8fa">
-  <meta name="description" content="백엔드 개발자 김지우. Java·Spring Boot와 Python·Django로 API를 개발하고, 실제 사용자가 있는 서비스를 배포·운영합니다.">
-  <meta property="og:title" content="김지우 · Backend Developer">
-  <meta property="og:description" content="실제 사용자가 있는 서비스를 만들고 운영합니다. DoLog, 치즈네컷, 부스끼리 프로젝트와 기술적 문제 해결 기록.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="og:url" content="https://ryann1203.github.io/">
-  <link rel="canonical" href="https://ryann1203.github.io/">
-  <title>김지우 · Backend Developer</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#fafbfc">
+ <meta name="description" content="백엔드 개발자 김지우. Java·Spring Boot와 Python·Django를 사용한 서비스 개발·운영, 기술 스택, 경험과 프로젝트를 소개합니다.">
+ <meta property="og:title" content="김지우 | Backend Developer">
+ <meta property="og:description" content="Java·Spring Boot와 Python·Django로 실제 사용자가 있는 서비스를 개발하고 운영합니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:locale" content="ko_KR">
+ <meta property="og:url" content="https://ryann1203.github.io/">
+ <link rel="canonical" href="https://ryann1203.github.io/">
+ <title>김지우 | Backend Developer</title>
+ <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+ <link rel="stylesheet" href="./styles.css">
+ <script src="./script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">본문으로 바로가기</a>
-  <div class="layout">
-    <aside class="sidebar">
-      <a class="identity" href="#intro" aria-label="김지우 포트폴리오 처음으로"><span class="identity-mark" aria-hidden="true">j.</span><span>김지우<small>Backend Developer</small></span></a>
-      <nav aria-label="목차">
-        <a href="#intro" aria-current="location"><span>01</span> 소개</a>
-        <a href="#projects"><span>02</span> 프로젝트</a>
-        <a href="#skills"><span>03</span> 기술</a>
-        <a href="#experience"><span>04</span> 경험과 배움</a>
-      </nav>
-      <div class="sidebar-bottom"><a href="mailto:oxford1203@naver.com">이메일 <span aria-hidden="true">↗</span></a><a href="https://github.com/ryann1203" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><button type="button" id="print-button" hidden>PDF로 저장 <span aria-hidden="true">↓</span></button><p>차분하게, 끝까지.</p></div>
-    </aside>
-
-    <main id="main">
-      <section class="intro" id="intro" aria-labelledby="intro-title">
-        <div class="eyebrow">KIM JIWOO <span>/</span> BACKEND DEVELOPER</div>
-        <h1 id="intro-title">안녕하세요.<br>백엔드 개발자 <strong>김지우</strong>입니다<span class="period">.</span></h1>
-        <p class="intro-lead">실제 사용자가 있는 서비스를 만들고,<br class="desktop-break"> 배포 이후의 문제까지 해결합니다.</p>
-        <p class="intro-description">Java·Spring Boot와 Python·Django로 API를 개발합니다.<br>데이터 조회, 트랜잭션, 외부 장치 연동에서 마주친 문제를 개선해 왔습니다.</p>
-        <div class="contact-links"><a href="mailto:oxford1203@naver.com">oxford1203@naver.com <span aria-hidden="true">↗</span></a><span class="contact-divider" aria-hidden="true"></span><a href="https://github.com/ryann1203" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="notion-link" href="https://alpine-oxygen-fc7.notion.site/Kim-Jiwoo-1b416794767c428582def2ec856fc6df" target="_blank" rel="noopener noreferrer">Notion 원문 <span aria-hidden="true">↗</span></a></div>
-        <dl class="highlights" aria-label="서비스 운영 성과"><div><dt>DoLog 누적 조회</dt><dd>6,500<span>+</span></dd></div><div><dt>DoLog 활성 사용자</dt><dd>약 900<span>명</span></dd></div><div><dt>축제 서비스 이용자</dt><dd>2,500<span>+</span></dd></div></dl>
-        <p class="metric-note">DoLog · 부스끼리 서비스 운영 기록</p>
-      </section>
-
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <header class="section-heading"><div><p class="eyebrow">SELECTED PROJECTS</p><h2 id="projects-title">프로젝트로 설명합니다.</h2></div><span class="section-caption">역할 · 해결한 문제 · 결과</span></header>
-
-        <article class="project featured" aria-labelledby="dolog-title">
-          <div class="project-heading"><div><div class="project-label"><span class="project-index">01</span> <span class="status"><i aria-hidden="true"></i> 운영 중</span></div><h3 id="dolog-title">DoLog <span>두록</span></h3><p class="project-subtitle">전시가 끝나도 작품은 남도록.</p></div><div class="project-meta"><span>2025.09 — 현재</span><span>백엔드 · 배포 · 운영</span></div></div>
-          <p class="project-description">대학 졸업전시의 작품과 작가를 기록하는 아카이빙 플랫폼.<br>백엔드 개발과 배포·운영을 맡아 <strong>3개 학과의 실제 전시</strong>를 서비스했습니다.</p>
-          <ul class="project-points"><li><strong>조회 효율</strong><span>작품 목록의 N+1 쿼리를 분석하고 연관 데이터를 함께 조회하도록 개선</span></li><li><strong>데이터 정합성</strong><span>작품·공동 작가·상세 이미지 수정을 하나의 트랜잭션으로 처리</span></li><li><strong>이미지 처리</strong><span>1,600px 초과 이미지 축소·WebP 변환·S3 저장을 공통 기능으로 구현</span></li></ul>
-          <p class="project-result"><span>서비스 성과</span> 누적 조회 6,500+회 · 활성 사용자 약 900명 · 타 대학 유료 도입</p>
-          <ul class="tags" aria-label="DoLog 사용 기술"><li>Java 17</li><li>Spring Boot</li><li>JPA</li><li>MySQL</li><li>AWS S3</li><li>Docker</li></ul>
-          <div class="project-links"><a href="https://github.com/DoLog-Team/DoLog-BE" target="_blank" rel="noopener noreferrer">코드 보기 <span aria-hidden="true">↗</span></a><a href="http://dolog.kr" target="_blank" rel="noopener noreferrer">서비스 <span aria-hidden="true">↗</span></a></div>
-          <details class="case-study"><summary>문제 해결 과정 <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="case-body"><div><h4>작품 목록에서 반복되는 조회</h4><p>작품과 연결된 전시 구역·공동 작가·작가 프로필을 읽는 과정에서 N+1 쿼리를 확인했습니다. 연관 데이터를 함께 조회하도록 바꿔 불필요한 데이터베이스 접근을 줄였습니다.</p></div><div><h4>여러 테이블에 걸친 작품 수정</h4><p>기본 정보·공동 작가·상세 이미지가 함께 바뀌는 수정 작업을 하나의 트랜잭션으로 묶었습니다. 작품 등록·이미지 처리·작가 연결 서비스도 분리해 변경 범위를 줄였습니다.</p></div><div><h4>실제 전시 데이터의 예외</h4><p>구역이 지정되지 않은 작품, 이미지가 없는 등록, 긴 작품 설명을 허용하도록 운영 중 확인한 예외를 보완했습니다. 이미지 처리 기능은 작품·작가·전시 영역에서 재사용했습니다.</p></div><p class="case-footnote">본인 담당: 백엔드 개발 및 서버 배포·운영 · 프로젝트 기여도 30%</p><a class="text-link" href="https://alpine-oxygen-fc7.notion.site/DoLog-3e3cc07a719a80689e90d5cdc443e3fc" target="_blank" rel="noopener noreferrer">프로젝트 기록 원문 ↗</a></div></details>
-        </article>
-
-        <article class="project" aria-labelledby="cheese-title">
-          <div class="project-heading"><div><div class="project-label"><span class="project-index">02</span><span>DEVICE INTEGRATION</span></div><h3 id="cheese-title">치즈네컷</h3><p class="project-subtitle">웹의 촬영 경험을 실제 사진 출력까지.</p></div><div class="project-meta"><span>2024.07 — 2024.10</span><span>백엔드 · 프린터 연동</span></div></div>
-          <p class="project-description">표정 인식으로 촬영하는 네 컷 사진 서비스.<br><strong>이미지 수신부터 Windows 포토 프린터 출력·상태 조회까지</strong> 자동화했습니다.</p>
-          <ul class="project-points"><li><strong>장치 연동</strong><span>Django API와 pywin32를 연결해 이미지·출력 매수에 따른 인쇄 제어</span></li><li><strong>예외 처리</strong><span>이미지 방향·용지 비율 보정, 임시 파일 정리, 프린터 연결 실패 처리</span></li></ul>
-          <ul class="tags" aria-label="치즈네컷 사용 기술"><li>Python</li><li>Django REST Framework</li><li>pywin32</li><li>Pillow</li></ul>
-          <div class="project-links"><a href="https://github.com/Face-Pizza/cheese4cut_print" target="_blank" rel="noopener noreferrer">코드 보기 ↗</a></div>
-          <details class="case-study"><summary>구현 내용 <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="case-body"><p>사용자가 고른 이미지와 출력 매수를 받아 서버에서 프린터 작업을 시작하도록 구현했습니다. 세로 이미지를 회전하고 원본 비율과 용지 비율을 비교해 잘리지 않는 출력 크기를 계산했습니다.</p><p>작업 ID와 상태를 조회하는 API로 진행 중·완료·작업 없음·오류를 전달했습니다. 이미지 임시 파일은 인쇄 요청 후 삭제하고 파일 처리·프린터 연결 실패 시 오류 메시지를 반환했습니다.</p><p class="case-footnote">본인 담당: 백엔드 및 사진 출력 연동. 표정 인식 기능은 서비스 전체 기능입니다.</p><a class="text-link" href="https://alpine-oxygen-fc7.notion.site/1b6cc07a719a802cab92f6740095feaa" target="_blank" rel="noopener noreferrer">프로젝트 기록 원문 ↗</a></div></details>
-        </article>
-
-        <article class="project" aria-labelledby="booth-title">
-          <div class="project-heading"><div><div class="project-label"><span class="project-index">03</span><span>API DESIGN</span></div><h3 id="booth-title">부스끼리</h3><p class="project-subtitle">축제 정보를 조건에 맞게, 한눈에.</p></div><div class="project-meta"><span>2024.09 — 2024.10</span><span>백엔드 개발</span></div></div>
-          <p class="project-description">동국대학교 가을 대동제의 부스·주점·푸드트럭 정보 서비스.<br><strong>2,500명 이상이 이용한 서비스</strong>의 부스 조회·검색 API를 개발했습니다.</p>
-          <ul class="project-points"><li><strong>검색과 필터</strong><span>날짜·카테고리·위치·예약 가능 여부를 조합하는 조회 로직 구현</span></li><li><strong>데이터 제공</strong><span>부스·상세 정보 모델과 다중 이미지 응답을 설계하고 응답·정렬 방식 통일</span></li></ul>
-          <ul class="tags" aria-label="부스끼리 사용 기술"><li>Python</li><li>Django REST Framework</li><li>django-filter</li></ul>
-          <div class="project-links"><a href="https://github.com/LikeLion-at-DGU/2024_fall_festival_back" target="_blank" rel="noopener noreferrer">코드 보기 ↗</a></div>
-          <details class="case-study"><summary>구현 내용 <span class="toggle-symbol" aria-hidden="true"></span></summary><div class="case-body"><p>Booth·BoothDetail 모델과 API 엔드포인트를 설계했습니다. django-filter로 여러 검색 조건을 조합하고, 상세 설명·메뉴·SNS 링크·이미지를 직렬화해 프론트엔드에 전달했습니다.</p><p>다중 이미지 업로드와 URL 변환을 지원하고, 응답 포맷과 정렬 로직을 적용해 화면에서 일관된 구조로 데이터를 사용할 수 있도록 했습니다.</p><a class="text-link" href="https://alpine-oxygen-fc7.notion.site/1b6cc07a719a801c8394de6dcde7767a" target="_blank" rel="noopener noreferrer">프로젝트 기록 원문 ↗</a></div></details>
-        </article>
-
-        <div class="more-projects"><p class="eyebrow">OTHER WORK</p>
-          <details class="other-project"><summary><span><strong>FedHybrid</strong><span>연합학습 파이프라인 · 성능 실험</span></span><span class="toggle-symbol" aria-hidden="true"></span></summary><div class="other-body"><p class="other-meta">2025.03 — 2025.12 · 구조 설계, 실험·분석, 대시보드 개발</p><p>기관별 데이터를 모으지 않고 모델 업데이트를 집계하는 서버·클라이언트 파이프라인을 구현했습니다. 동적 가중 집계와 8-bit 양자화·가지치기를 적용했습니다.</p><p><strong>프로젝트 실험 결과:</strong> 모델 업데이트 압축으로 통신 비용 약 70~85% 절감(프로젝트 실험 기준). FedAvg·FedProx 등 선행 기법과 동일한 조건에서 정확도·손실·통신 비용을 비교했습니다.</p><p>2025 동국대학교 S.M.A.R.T. 토너먼트 최우수상 · CO-SHOW 사업단장상</p><div class="project-links"><a href="https://github.com/FedHybrid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/FedHybrid-2eecc07a719a805da8afea2ebdd60c57" target="_blank" rel="noopener noreferrer">프로젝트 기록 ↗</a></div></div></details>
-          <details class="other-project"><summary><span><strong>Voisk</strong><span>NFC 기반 접근성 주문 · 프론트엔드</span></span><span class="toggle-symbol" aria-hidden="true"></span></summary><div class="other-body"><p class="other-meta">2024.09 — 2024.12 · 접근성 UI·UX, 주문 상태 및 API 연동</p><p>시각장애인이 스마트폰의 VoiceOver·TalkBack으로 주문할 수 있는 화면을 구현했습니다. 한 화면에 하나의 선택을 제공하고 장바구니·주문번호 상태와 서버 API를 연결했습니다.</p><p><strong>비교 실험:</strong> VoiceOver로 아이스 아메리카노를 주문하는 동작 수를 메가커피 앱 129회에서 Voisk 35회로 줄였습니다. 프로젝트 결과물로 특허를 출원했습니다.</p><div class="project-links"><a href="https://github.com/CSID-DGU/2024-2-DES4025-Passengers-02" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/NFC-Voisk-0aa537f149d043e1aef54485089f7659" target="_blank" rel="noopener noreferrer">프로젝트 기록 ↗</a></div></div></details>
-        </div>
-      </section>
-
-      <section class="section" id="skills" aria-labelledby="skills-title"><header class="section-heading"><div><p class="eyebrow">TECH STACK</p><h2 id="skills-title">프로젝트에서 사용한 기술</h2></div></header><dl class="skills-list"><div><dt>Backend</dt><dd><strong>Java · Spring Boot · Spring Data JPA</strong><span>DoLog의 도메인·API·트랜잭션 구현</span></dd></div><div><dt>Backend</dt><dd><strong>Python · Django REST Framework</strong><span>부스 검색·필터링, 이미지 출력 API 구현</span></dd></div><div><dt>Data &amp; Storage</dt><dd><strong>MySQL · AWS S3</strong><span>관계형 데이터 관리와 공통 이미지 저장·변환</span></dd></div><div><dt>Deployment</dt><dd><strong>Docker · GitHub Actions · AWS EC2</strong><span>서비스 배포·운영 경험 및 프로젝트 사용 기술</span></dd></div></dl></section>
-
-      <section class="section experience-section" id="experience" aria-labelledby="experience-title"><header class="section-heading"><div><p class="eyebrow">EXPERIENCE &amp; EDUCATION</p><h2 id="experience-title">경험과 배움</h2></div></header><div class="timeline"><div><p class="timeline-date">2025.01 — 2025.02</p><div><h3>IBK기업은행 <span>디지털 직무 인턴</span></h3><p>32기 청년인턴 · 2개월</p></div></div><div><p class="timeline-date">2026.03 — 2026.08</p><div><h3>KB국민은행 IT’s Your Life <span>7기</span></h3><p>금융 IT 부트캠프</p></div></div><div><p class="timeline-date">2024.03 — 2025.11</p><div><h3>동국대학교 멋쟁이사자처럼</h3><p>12기 백엔드 · 13기 백엔드 운영진</p></div></div><div><p class="timeline-date">Education</p><div><h3>동국대학교 <span>컴퓨터공학전공</span></h3></div></div></div></section>
-
-      <footer><div><p class="eyebrow">LET’S TALK</p><h2>함께 일할 기회를 기다립니다.</h2><a class="footer-email" href="mailto:oxford1203@naver.com">oxford1203@naver.com <span aria-hidden="true">↗</span></a></div><div class="footer-meta"><span>© 2026 김지우</span><span>콘텐츠 정리 2026.10</span><a href="#intro">맨 위로 ↑</a></div></footer>
-    </main>
-  </div>
+ <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+ <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol><symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7m12 5v-3.4c0-1 .1-1.4-.5-2 3-.4 6.2-1.5 6.2-6.7 0-1.5-.5-2.6-1.4-3.5.2-.5.6-2-.1-3.5 0 0-1.1-.4-3.6 1.3a12.1 12.1 0 0 0-6.6 0C6.5 1.8 5.4 2.2 5.4 2.2c-.7 1.5-.3 3-.1 3.5A5 5 0 0 0 4 9.2c0 5.2 3.2 6.3 6.2 6.7-.4.4-.6 1-.6 1.8v3.6"/></symbol><symbol id="icon-page" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></symbol><symbol id="icon-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6zM18 12h.01"/></symbol><symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></symbol><symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol></svg>
+ <header class="site-header"><div class="container header-inner">
+  <a class="brand" href="#top"><strong>김지우</strong><span> · Backend Developer</span></a>
+  <div class="header-controls"><nav aria-label="섹션 이동"><a href="#about" aria-current="location">소개</a><a href="#skills">기술</a><a href="#experience">경험</a><a href="#projects">프로젝트</a></nav><div class="header-tools">
+   <button class="icon-button" id="print-button" type="button" aria-label="이력서 인쇄 / PDF 저장" title="인쇄 · PDF 저장" hidden><svg class="icon " aria-hidden="true"><use href="#icon-print"/></svg></button>
+   <button class="icon-button" id="theme-button" type="button" aria-label="다크 모드로 전환" aria-pressed="false" title="다크 모드" hidden><svg class="icon theme-moon" aria-hidden="true"><use href="#icon-moon"/></svg><svg class="icon theme-sun" aria-hidden="true"><use href="#icon-sun"/></svg></button>
+  </div></div>
+ </div></header>
+ <main id="main">
+  <section class="hero" id="top" aria-labelledby="name"><div class="container">
+   <div class="hero-main"><div class="hero-copy">
+    <p class="badge">백엔드 개발자</p>
+    <h1 id="name">김지우<span>Kim Jiwoo · Backend Developer</span></h1>
+    <p class="hero-description">Java와 Spring Boot, Python과 Django로 서비스를 만들고,<br class="wide-break"> 실제 사용 환경에서 마주친 문제를 개선해 왔습니다.</p>
+    <ul class="contact-links" aria-label="연락처 및 링크"><li><a href="mailto:oxford1203@naver.com"><svg class="icon " aria-hidden="true"><use href="#icon-mail"/></svg>oxford1203@naver.com</a></li><li><a href="https://github.com/ryann1203" target="_blank" rel="noopener noreferrer"><svg class="icon " aria-hidden="true"><use href="#icon-github"/></svg>github.com/ryann1203</a></li><li><a href="https://alpine-oxygen-fc7.notion.site/Kim-Jiwoo-1b416794767c428582def2ec856fc6df" target="_blank" rel="noopener noreferrer"><svg class="icon " aria-hidden="true"><use href="#icon-page"/></svg>Notion</a></li></ul>
+   </div><img class="profile-photo" src="./assets/profile.jpg" alt="김지우 프로필 사진" width="168" height="168" fetchpriority="high"></div>
+   <dl class="hero-facts"><div><dt>주력 스택</dt><dd>Java · Spring Boot</dd></div><div><dt>서비스 운영</dt><dd>3개 학과 전시 아카이브</dd></div><div><dt>인턴 경험</dt><dd>IBK기업은행 디지털 · 2개월</dd></div></dl>
+  </div></section>
+  <section class="section" id="about" aria-labelledby="about-title"><div class="container">
+   <header class="section-heading"><p class="eyebrow">About</p><h2 id="about-title">소개</h2></header>
+   <div class="about-text"><p>사용자의 불편을 발견하고, 서비스가 실제로 쓰이는 과정까지 경험하는 백엔드 개발자입니다. 졸업전시 아카이빙 플랫폼 <strong>DoLog</strong>의 백엔드 개발과 배포·운영을 맡아 누적 조회 <strong>6,500+회</strong>, 활성 사용자 <strong>약 900명</strong>의 서비스를 운영했습니다.</p><p>작품 목록의 N+1 조회, 여러 테이블에 걸친 수정, 이미지 처리와 외부 장치 연동처럼 기능 구현 과정에서 마주친 문제를 개선해 왔습니다. 구현한 기능이 실제 사용 환경에서도 이어질 수 있도록 데이터 구조와 예외 상황을 함께 살핍니다.</p></div>
+  </div></section>
+  <section class="section" id="skills" aria-labelledby="skills-title"><div class="container">
+   <header class="section-heading"><p class="eyebrow">Skills</p><h2 id="skills-title">기술 스택</h2></header><div class="skill-grid"><div class="skill-card"><h3>Language</h3><ul class="tags"><li>Java</li><li>Python</li></ul></div><div class="skill-card"><h3>Framework</h3><ul class="tags"><li>Spring Boot</li><li>Spring Data JPA</li><li>Spring Security</li><li>Django REST Framework</li></ul></div><div class="skill-card"><h3>Database · Storage</h3><ul class="tags"><li>MySQL</li><li>AWS S3</li></ul></div><div class="skill-card"><h3>Infra · DevOps</h3><ul class="tags"><li>AWS EC2</li><li>Docker</li><li>GitHub Actions</li><li>Git</li></ul></div></div>
+  </div></section>
+  <section class="section" id="experience" aria-labelledby="experience-title"><div class="container">
+   <header class="section-heading"><p class="eyebrow">Experience &amp; Education</p><h2 id="experience-title">경험 · 교육</h2></header><div class="experience-list"><div class="experience-row"><div><h3>IBK기업은행 <span>디지털 직무 인턴</span></h3><p>32기 청년인턴 · 2개월</p></div><span class="row-date">2025.01 — 2025.02</span></div><div class="experience-row"><div><h3>KB국민은행 IT’s Your Life <span>7기</span></h3><p>금융 IT 부트캠프</p></div><span class="row-date">2026.03 — 2026.08</span></div><div class="experience-row"><div><h3>동국대학교 멋쟁이사자처럼</h3><p>12기 백엔드 · 13기 백엔드 운영진</p></div><span class="row-date">2024.03 — 2025.11</span></div><div class="experience-row"><div><h3>동국대학교 <span>컴퓨터공학전공</span></h3></div><span class="row-date">학력</span></div></div>
+  </div></section>
+  <section class="section" id="projects" aria-labelledby="projects-title"><div class="container">
+   <header class="section-heading"><p class="eyebrow">Projects</p><h2 id="projects-title">프로젝트</h2></header>
+   <div class="project-group"><header class="group-heading"><h3>백엔드 개발 · 운영</h3><p>서비스 API부터 데이터 처리, 장치 연동과 배포·운영까지 담당했습니다.</p></header>
+   <article class="project" aria-labelledby="dolog-title">
+ <header class="project-heading"><h4 id="dolog-title">DoLog — 대학 졸업전시 아카이빙 플랫폼 <span class="status">운영 중</span></h4><span class="project-date">2025.09 — 현재</span></header>
+ <p class="project-description">전시가 끝난 뒤 흩어지는 작품과 작가 정보를 온라인에 기록하는 서비스입니다. 백엔드 개발과 서버 배포·운영을 담당해 <strong>3개 학과의 전시 아카이브</strong>를 운영했으며, 타 대학의 첫 유료 도입으로 이어졌습니다.</p>
+ <ul class="project-points"><li>작품·작가·전시·구역의 관계를 설계하고, 작품 등록·수정·삭제와 작품명·작가명 검색, 구역별 조회 API를 개발했습니다.</li><li>작품 목록에서 전시 구역·공동 작가·작가 프로필을 읽을 때 발생한 <strong>N+1 쿼리를 분석</strong>하고, 연관 데이터를 함께 조회하도록 개선했습니다.</li><li>기본 정보·공동 작가·상세 이미지가 함께 바뀌는 작품 수정을 <strong>하나의 트랜잭션</strong>으로 처리하고, 기능별 서비스를 분리해 변경 범위를 줄였습니다.</li><li>가로 1,600px 초과 이미지 축소, WebP 변환, S3 저장을 공통 기능으로 구현했습니다. 운영 중 확인한 구역 미지정·이미지 없는 작품 등록 등의 예외도 보완했습니다.</li><li><strong>누적 조회 6,500+회 · 활성 사용자 약 900명.</strong> 실제 전시 데이터 취합부터 배포·운영까지 서비스 전체 흐름을 경험했습니다.</li></ul>
+ <p class="contribution">담당: 백엔드 개발 · 서버 배포 및 운영 / 프로젝트 기여도 30%</p>
+ <div class="project-links"><a href="http://dolog.kr" target="_blank" rel="noopener noreferrer">dolog.kr ↗</a><a href="https://github.com/DoLog-Team/DoLog-BE" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/DoLog-3e3cc07a719a80689e90d5cdc443e3fc" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <ul class="tags" aria-label="DoLog 사용 기술"><li>Java 17</li><li>Spring Boot</li><li>Spring Data JPA</li><li>Spring Security</li><li>MySQL</li><li>AWS S3</li><li>Docker</li><li>GitHub Actions</li></ul>
+</article><article class="project" aria-labelledby="cheese-title">
+ <header class="project-heading"><h4 id="cheese-title">치즈네컷 — 표정 인식 네 컷 사진 서비스 </h4><span class="project-date">2024.07 — 2024.10</span></header>
+ <p class="project-description">사용자의 표정에 따라 사진을 촬영하고 선택한 사진을 출력하는 서비스입니다. 백엔드를 맡아 <strong>웹에서 이미지를 전달받는 과정부터 Windows 포토 프린터 출력과 상태 확인까지</strong> 자동화했습니다.</p>
+ <ul class="project-points"><li>이미지 파일과 출력 매수를 요청받아 임시 저장하고, 인쇄 작업을 시작한 뒤 성공·실패를 반환하는 Django API를 구현했습니다.</li><li>pywin32의 win32print·win32ui로 기본 프린터와 장치 컨텍스트를 연결하고, 선택한 매수만큼 인쇄 페이지를 생성하도록 제어했습니다.</li><li>Pillow로 세로 이미지를 자동 회전하고 원본과 용지 비율을 비교해, 방향과 크기가 달라도 <strong>잘리지 않는 출력 크기</strong>를 계산했습니다.</li><li>프린터 작업 ID와 상태를 조회해 진행 중·완료·작업 없음·오류를 전달했습니다. 임시 파일 정리와 파일 처리·프린터 연결 실패 시 오류 응답도 구현했습니다.</li></ul>
+ <p class="contribution">담당: 백엔드 · 사진 출력 API 및 프린터 연동</p>
+ <div class="project-links"><a href="https://github.com/Face-Pizza/cheese4cut_print" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/1b6cc07a719a802cab92f6740095feaa" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <ul class="tags" aria-label="치즈네컷 사용 기술"><li>Python</li><li>Django REST Framework</li><li>pywin32</li><li>Pillow</li></ul>
+</article><article class="project" aria-labelledby="booth-title">
+ <header class="project-heading"><h4 id="booth-title">부스끼리 — 동국대학교 가을 대동제 정보 서비스 </h4><span class="project-date">2024.09 — 2024.10</span></header>
+ <p class="project-description">축제 기간의 부스·주점·푸드트럭 정보를 날짜와 위치 등으로 찾아보는 서비스입니다. <strong>2,500명 이상이 이용한 서비스</strong>에서 부스 정보와 상세 데이터를 제공하는 백엔드 API를 담당했습니다.</p>
+ <ul class="project-points"><li>Django REST Framework 기반으로 Booth·BoothDetail 모델과 조회 API를 설계해 부스 목록과 상세 정보를 제공했습니다.</li><li>django-filter를 활용해 <strong>날짜·카테고리·위치·예약 가능 여부</strong>를 조합하는 조회 로직을 구현했습니다.</li><li>부스별 설명·메뉴·SNS 링크·이미지를 직렬화하고, 다중 이미지 업로드와 URL 변환을 지원했습니다.</li><li>프론트엔드가 일관된 구조로 데이터를 사용할 수 있도록 응답 포맷과 정렬 로직을 적용했습니다.</li></ul>
+ <p class="contribution">담당: 백엔드 · 부스 검색 및 조회 API</p>
+ <div class="project-links"><a href="https://github.com/LikeLion-at-DGU/2024_fall_festival_back" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/1b6cc07a719a801c8394de6dcde7767a" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <ul class="tags" aria-label="부스끼리 사용 기술"><li>Python</li><li>Django REST Framework</li><li>django-filter</li></ul>
+</article></div>
+   <div class="project-group"><header class="group-heading"><h3>연구 · 접근성 프로젝트</h3><p>분산 학습의 통신 비용과 사용자의 접근성 문제를 실험하고 개선했습니다.</p></header>
+   <article class="project" aria-labelledby="fed-title">
+ <header class="project-heading"><h4 id="fed-title">FedHybrid — 데이터 불균형에 대응하는 연합학습 </h4><span class="project-date">2025.03 — 2025.12</span></header>
+ <p class="project-description">기관별 원본 데이터를 공유하지 않고 모델 업데이트를 모아 공동 학습하는 프레임워크입니다. 서버·클라이언트 파이프라인을 구현하고, 데이터 분포가 다른 환경에서 정확도와 통신 비용을 비교했습니다.</p>
+ <ul class="project-points"><li>글로벌 모델 배포 → 로컬 학습 → 업데이트 수집·집계 → 다음 라운드로 이어지는 흐름과 참여 기관 수·대기 시간에 따른 집계 조건을 구현했습니다.</li><li>중요한 업데이트만 선별하고 <strong>8-bit 양자화·가지치기</strong>를 적용해 통신 비용을 약 <strong>70~85% 절감</strong>했습니다(프로젝트 실험 기준).</li><li>CKKS 방식의 업데이트 암호화 전송과 서버 복호화·집계를 연결하고, FedAvg·FedProx 등 선행 기법과 동일 조건에서 성능을 비교했습니다.</li><li>데이터 업로드·학습 로그·정확도 차트와 환자별 예측 결과 다운로드를 제공하는 웹 대시보드를 구현했습니다.</li></ul>
+ <p class="contribution">담당: 연합학습 구조 설계 · 실험 및 분석 · 모니터링 대시보드<br>2025 동국대학교 S.M.A.R.T. 토너먼트 최우수상 · CO-SHOW 사업단장상</p>
+ <div class="project-links"><a href="https://github.com/FedHybrid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/FedHybrid-2eecc07a719a805da8afea2ebdd60c57" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <ul class="tags" aria-label="FedHybrid 사용 기술"><li>Python</li><li>PyTorch</li><li>FedAvg</li><li>FedProx</li><li>CKKS</li><li>Next.js</li></ul>
+</article><article class="project" aria-labelledby="voisk-title">
+ <header class="project-heading"><h4 id="voisk-title">Voisk — NFC 기반 접근성 주문 시스템 </h4><span class="project-date">2024.09 — 2024.12</span></header>
+ <p class="project-description">시각장애인이 NFC 태그로 접속해 스마트폰의 VoiceOver·TalkBack으로 주문하는 서비스입니다. 프론트엔드를 담당해 접근성 주문 화면과 주문 상태, 서버 API 연동을 구현했습니다.</p>
+ <ul class="project-points"><li>한 화면에서 하나의 선택을 수행하는 순차적 구조로 메뉴·옵션·수량·장바구니·주문번호까지 이어지는 주문 흐름을 구현했습니다.</li><li>localStorage로 페이지 간 선택 상태와 장바구니를 유지하고, Fetch API로 주문을 전송해 응답의 주문번호를 표시했습니다.</li><li>VoiceOver로 아이스 아메리카노를 주문하는 비교 실험에서 동작 수를 <strong>메가커피 앱 129회 → Voisk 35회</strong>로 줄였습니다. 프로젝트 결과물로 특허를 출원했습니다.</li></ul>
+ <p class="contribution">담당: 프론트엔드 · 접근성 UI·UX · 주문 상태 및 API 연동</p>
+ <div class="project-links"><a href="https://github.com/CSID-DGU/2024-2-DES4025-Passengers-02" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://alpine-oxygen-fc7.notion.site/NFC-Voisk-0aa537f149d043e1aef54485089f7659" target="_blank" rel="noopener noreferrer">상세 기록 ↗</a></div>
+ <ul class="tags" aria-label="Voisk 사용 기술"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch API</li><li>VoiceOver</li><li>TalkBack</li></ul>
+</article></div>
+  </div></section>
+ </main>
+ <footer class="site-footer"><div class="container"><span>Last updated 2026. 10. 28</span><span aria-hidden="true"> · </span><a href="https://github.com/ryann1203/ryann1203.github.io/tree/codex/jiwoo-portfolio/docs" target="_blank" rel="noopener noreferrer">source on GitHub</a></div></footer>
 </body>
 </html>
