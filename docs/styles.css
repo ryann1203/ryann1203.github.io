@@ -81,8 +81,6 @@ h1 span { display: block; font-size: 18px; line-height: 1.5; font-weight: 500; c
 .hero-facts > div { padding: 14px 17px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
 .hero-facts dt { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: .02em; }
 .hero-facts dd { margin-top: 3px; font-size: 15px; font-weight: 650; line-height: 1.6; }
-.hero-service-link { color: var(--accent); white-space: nowrap; }
-.hero-service-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* Introduction, skills and experience */
 .section { padding: 56px 0; border-bottom: 1px solid var(--line); }
