@@ -151,6 +151,7 @@ h2 { margin-top: 7px; font-size: 30px; font-weight: 700; line-height: 1.3; lette
 .detail-section + .detail-section { margin-top: 22px; }
 .detail-section h3 { font-size: 15px; font-weight: 650; line-height: 1.5; }
 .detail-section p, .detail-section ul { margin-top: 8px; font-size: 15px; line-height: 1.85; color: var(--body); }
+.detail-section p.measurement-note { font-size: 12px; line-height: 1.75; color: var(--muted); }
 .detail-section ul { padding-left: 18px; }
 .detail-section li + li { margin-top: 8px; }
 .detail-section li::marker { color: var(--muted); }
