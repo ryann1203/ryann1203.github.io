@@ -108,7 +108,7 @@
  <header class="project-heading"><h4 id="booth-title">부스끼리 — 동국대학교 가을 대동제 정보 서비스 </h4><span class="project-date">2024.09 — 2024.10</span></header>
  <p class="project-role">백엔드 개발 <span>부스 검색 및 조회 API</span></p>
  <div class="project-content">
- <p class="project-description">2,500+명이 이용한 동국대학교 축제 서비스에서 부스 정보 검색과 조회 API를 개발했습니다.</p>
+ <p class="project-description"><strong>2,500+명</strong>이 이용한 동국대학교 축제 서비스에서 부스 정보 검색과 조회 API를 개발했습니다.</p>
  <ul class="project-points"><li>Django REST Framework로 Booth와 BoothDetail을 모델링하고, 부스 목록과 상세 정보 조회 API를 개발했습니다.</li><li>django-filter를 활용해 <strong>날짜, 카테고리, 위치, 예약 가능 여부</strong>를 조합하는 조회 로직을 구현했습니다.</li><li>부스별 설명, 메뉴, SNS 링크와 이미지를 직렬화하고, 다중 이미지 업로드와 URL 변환을 지원했습니다.</li><li>프론트엔드가 일관된 구조로 데이터를 사용할 수 있도록 응답 포맷과 정렬 로직을 적용했습니다.</li></ul>
  <div class="project-links"><a href="https://github.com/LikeLion-at-DGU/2024_fall_festival_back" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button class="detail-button" type="button" data-dialog="booth-details" aria-haspopup="dialog" aria-controls="booth-details" aria-label="부스끼리 상세 기록 열기" hidden>상세 기록 <span aria-hidden="true">→</span></button></div>
  <ul class="tags" aria-label="부스끼리 사용 기술"><li>Python</li><li>Django REST Framework</li><li>django-filter</li></ul>
@@ -153,7 +153,7 @@
   <div class="dialog-body">
    <section class="detail-section"><h3>서비스 소개</h3><p>실거래가와 세금, 대출 조건을 함께 살펴보고 부동산의 적정 가격과 협상 범위를 판단할 수 있도록 만든 플랫폼입니다. 매도자가 비용을 회수할 수 있는 가격과 매수자의 구매 가능 금액을 비교해 거래 판단의 근거를 제공합니다.</p><p>백엔드 개발을 맡아 실거래 데이터 수집과 지도 조회, 외부 API 오류 대응 및 가격 계산 구조를 개선했습니다.</p></section>
    <figure class="detail-figure"><img src="./assets/projects/homedeal-map.png" alt="HomeDeal의 지도 탐색과 단지별 시세 분석 화면" width="1600" height="900" loading="lazy" decoding="async"><figcaption>지도 탐색과 시세 분석 화면</figcaption></figure>
-   <section class="detail-section"><h3>지도 조회 개선</h3><p>약 <strong>600만 건의 원본 데이터를 요청마다 집계</strong>하면서 지도 조회에 타임아웃이 발생했습니다. 지도에 필요한 값을 미리 계산한 요약 테이블로 옮기고, 조회 범위와 인덱스를 조정해 요청 시 처리할 데이터 양을 줄였습니다.</p><p>기존 데이터를 지운 뒤 다시 채우는 대신 별도 테이블에 집계를 완성한 후 한 번에 교체했습니다. 갱신 중에도 완성된 데이터를 조회하도록 하고, 같은 지도 영역의 반복 요청은 캐시에 보관한 결과를 사용하도록 했습니다.</p></section>
+   <section class="detail-section"><h3>지도 조회 개선</h3><p>약 <strong>600만 건의 원본 데이터를 요청마다 집계</strong>하면서 지도 조회에 타임아웃이 발생했습니다. 지도에 필요한 값을 미리 계산한 요약 테이블로 옮기고, 조회 범위와 인덱스를 조정해 요청 시 처리할 데이터 양을 줄였습니다.</p><p>기존 데이터를 지운 뒤 다시 채우는 대신 별도 테이블에 집계를 완성한 후 한 번에 교체했습니다. 갱신 중에도 완성된 데이터를 조회하도록 하고, 같은 지도 영역의 반복 요청은 캐시에 보관한 결과를 사용하도록 했습니다.</p><p>캐시 적용 후 로컬 반복 조회 테스트에서 동 요약과 아파트 마커 API의 <strong>p95 응답시간을 약 79% 단축</strong>했습니다. 요약 테이블이 적용된 축소 데이터셋에서 캐시 사용 여부만 바꿔 각 3회 측정한 중앙값입니다.</p></section>
    <section class="detail-section"><h3>데이터 수집 안정화</h3><p>반복 수집되는 거래의 식별값에 <strong>DB UNIQUE 제약</strong>을 적용했습니다. 저장 전 조회에만 의존하지 않아 동시에 수집하거나 배치를 다시 실행해도 같은 거래가 중복 저장되지 않도록 했습니다.</p><p>건축물 정보는 사용자 요청 중 외부 API를 호출하는 대신 <strong>Quartz로 미리 수집</strong>해 DB에서 제공했습니다. 일시적인 통신 오류는 다음 수집에서 다시 시도하고, 실제 정보가 없는 경우와 구분해 외부 오류가 사용자 조회에 미치는 영향을 줄였습니다.</p></section>
    <section class="detail-section"><h3>변경에 대응하는 계산 구조</h3><p>시점과 조건에 따라 달라지는 세금과 대출 기준을 적용 기간이 있는 DB 정보로 관리했습니다. 계산과 입력 검증, 서비스 흐름을 분리해 규정 변경 시 수정 범위를 줄이고 다른 가격 계산 기능에서도 재사용할 수 있도록 구성했습니다.</p></section>
   </div>
